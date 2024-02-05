@@ -23,7 +23,7 @@ const Details = ({route, navigation}) => {
             />
           <Text   style={[styles.title, styles.textStyle]}>{product.title}</Text>
           <Text  style={[styles.description, styles.textStyle]}>{product.description}</Text>
-          <Text  style={[styles.price, styles.textStyle]}>${product.price}</Text>
+          <Text  style={[styles.price, styles.textStyle]}>Rs {product.price}</Text>
           <TouchableOpacity onPress={() => {
             navigation.navigate("Home")
             handleAddTocart()}} style={styles.addCartButton}>
